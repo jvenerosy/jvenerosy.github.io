@@ -1,4 +1,4 @@
 jvenerosy.github.io
 ===================
 
-Blog Personnel
+Blog Personnel basé sur Jekyll
