@@ -7,7 +7,6 @@ url: ""
 paginate: 1
 paginate_path: "news/:num"
 github: jvenerosy
-ps4: jvener974
 
 # Build settings
 markdown: kramdown
