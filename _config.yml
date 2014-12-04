@@ -1,11 +1,13 @@
 # Site settings
-title: Mon Super Site
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: JVenerosy
+email: julien.venerosy@gmail.com
+description: "News"
 baseurl: ""
 url: ""
 paginate: 1
 paginate_path: "news/:num"
+github: jvenerosy
+ps4: jvener974
 
 # Build settings
 markdown: kramdown
