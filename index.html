@@ -1,23 +1,28 @@
 ---
 layout: default
+title: Bienvenue sur mon site
+weight: 1
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	<h2>Mes dernières actualités</h2>
+	<div class="last-actus">
+		<section>
+			<a href="" title=""><img src="http://placehold.it/300x200" alt=""/></a>
+			<p class="titre"><a href="" title="">Voici un titre</a></p>
+			<p class="description"><a href="" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus autem repudiandae error ipsa deserunt, dolor ipsum officia accusantium consequuntur fuga molestias, saepe. Voluptates, velit dignissimos excepturi sed similique, repellat est.</a></p>
+		</section>
+		<section>
+			<a href="" title=""><img src="http://placehold.it/300x200" alt=""/></a>
+			<p class="titre"><a href="" title="">Voici un titre</a></p>
+			<p class="description"><a href="" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus autem repudiandae error ipsa deserunt, dolor ipsum officia accusantium consequuntur fuga molestias, saepe. Voluptates, velit dignissimos excepturi sed similique, repellat est.</a></p>
+		</section>
+		<section>
+			<a href="" title=""><img src="http://placehold.it/300x200" alt=""/></a>
+			<p class="titre"><a href="" title="">Voici un titre</a></p>
+			<p class="description"><a href="" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus autem repudiandae error ipsa deserunt, dolor ipsum officia accusantium consequuntur fuga molestias, saepe. Voluptates, velit dignissimos excepturi sed similique, repellat est.</a></p>
+		</section>
+	</div>
 
 </div>
