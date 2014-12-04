@@ -1,7 +1,7 @@
 ## Blog JVenerosy
 ----------
 
-Blog de Julien Venerosy, sur tout et n'importe quoi :
+Blog de Julien Venerosy, sur tout et n'importe quoi :)
 
  - Actualité High Tech
  - Politique (non je déconne)
