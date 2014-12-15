@@ -23,6 +23,12 @@ strong{
 	color: $blanc;
 }
 
+ul{
+	@include breakpoint(mobile){
+		padding: 0;
+	}
+}
+
 .post-title{
 	line-height: $size-title;
 	padding: 10px 0;
