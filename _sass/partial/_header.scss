@@ -3,6 +3,9 @@ header.site-header{
 	.wrapper{
 		overflow: hidden;
 		display: table;
+		@include breakpoint(mobile){
+			display: block;
+		}
 	}
 	p{
 		@include fonts($font1, 20px);
@@ -13,11 +16,22 @@ header.site-header{
 		border-left: 1px solid $gris-m;
 		width: 150px;
 		text-align: center;
+		@include breakpoint(mobile){
+			display: block;
+			padding: 10px;
+			text-align: center;
+			width: 100%;
+			border: none;
+		}
 	}
 	nav{
 		display: table-cell;
 		text-align: right;
 		border-right: 1px solid $gris-m;
+		@include breakpoint(mobile){
+			display: block;	
+			border: none;
+		}
 		ul{
 			list-style: none;
 			padding: 0;
@@ -28,6 +42,12 @@ header.site-header{
 				text-transform: uppercase;
 				border-left: 1px solid $gris-m;
 				font-size: $size-text;
+				@include breakpoint(mobile){
+					display: block;
+					border: none;
+					border-top: 1px solid $gris-m;
+					
+				}
 				a{
 					color: $gris-c;
 					text-decoration: none;

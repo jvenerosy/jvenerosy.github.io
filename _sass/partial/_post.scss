@@ -1,6 +1,10 @@
 article.post-content{
 	color: $gris-c;
 
+	img{
+		width: 100%;
+	}
+
 	h3, h4, h5, h6{
 		color: $blanc;
 	}
@@ -51,14 +55,17 @@ article.post-content{
 		background: $gris-m;
 		padding: 20px;
 		@include fonts($font2, $size-text);
-		color: $blanc;
 		@include box-shadow(inset 0 1px 10px rgba(0,0,0,0.3));
+		code{
+			color: $blanc;
+			padding: 0;
+		}
 	}
 	code{
-		background: $gris-m;
 		@include fonts($font2, $size-text);
-		color: $blanc;
+		background: $gris-m;
 		padding: 3px;
+		color: $blanc;
 	}
 
 }
