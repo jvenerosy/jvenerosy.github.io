@@ -4,25 +4,20 @@ layout: default
 
 <div class="home">
 
-	<h1 class="page-heading">Derniers cours</h1>
 
 	<div class="cours">
-		{% for cours in site.posts %}
-		<section>
-			<a class="mea" href="{{ cours.url }}"><img src="{{cours.img}}" alt="{{cours.title}}"></a>
-			<div class="txt">
-				<h2 class="post-title"><a href="{{ cours.url }}">{{cours.title}}<span class="post-meta">{{cours.date | date: "%d / %m / %Y" }}</span></a></h2>
-				<p><a href="{{ cours.url }}">{{cours.description}}</a></p>
-				<p class="author">Par <em>{{cours.author}}</em></p>
-				{% if cours.categories %}
-					<p class="tag">
-					{% for category in cours.categories %}
-						<a href="{{ site.url }}/{{ category }}/">#{{ category }}</a>				
-					{% endfor %}
-					</p>
-				{% endif %}
-			</div>
-		</section>
+		{% for category in site.categories  %}
+			<h2 class="page-heading">{{ category | first }}</h2>
+			{% for post in category[1] %}
+			<section>
+				<a class="mea" href="{{ post.url }}"><img src="{{post.img}}" alt="{{post.title}}"></a>
+				<div class="txt">
+					<h2 class="post-title"><a href="{{ post.url }}">{{post.title}}<span class="post-meta">{{post.date | date: "%d / %m / %Y" }}</span></a></h2>
+					<p><a href="{{ post.url }}">{{post.description}}</a></p>
+					<p class="author">Par <em>{{post.author}}</em></p>
+				</div>
+			</section>
+			{% endfor %}
 		{% endfor %}
 	</div>
 

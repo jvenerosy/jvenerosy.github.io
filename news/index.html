@@ -5,9 +5,9 @@ layout: default
 <div class="home">
 
 
-	<h1 class="page-heading">Derniers cours</h1>
+	<h1 class="page-heading">Dernières news</h1>
 	<div class="cours">
-		{% for cours in site.categories.cours %}
+		{% for cours in site.categories.news %}
 		<section>
 			<a class="mea" href="{{ cours.url }}"><img src="{{cours.img}}" alt="{{cours.title}}"></a>
 			<div class="txt">

@@ -9,11 +9,22 @@ h1{
 	text-transform: uppercase;
 	@include fonts($font1, $size-title);
 	border-bottom: 1px solid $gris-c;
+	padding: 0 $marge;
 }
 h2{
 	color: $bleu;
 	text-transform: uppercase;
 	@include fonts($font1, $size-inter);
+	&.page-heading{
+		text-transform: uppercase;
+		@include fonts($font1, $size-title);
+		border-bottom: 1px solid $gris-c;
+		padding: 0 $marge;
+		color: $blanc;
+	}
+	&.post-title{
+		padding: 10px 0;
+	}
 }
 a{
 	outline: none;
@@ -31,7 +42,7 @@ ul{
 
 .post-title{
 	line-height: $size-title;
-	padding: 10px 0;
+	padding: 10px $marge;
 	span.post-meta{
 		padding: 10px 0;
 		line-height: $size-title;

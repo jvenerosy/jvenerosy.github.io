@@ -1,11 +1,12 @@
 <header class="site-header">
 
 	<div class="wrapper">
-		<p>JVenerosy</p>
+		<h3><a href="{{ site.url }}/">JVenerosy</a></h3>
 		<nav>
 			<ul>
-				<li><a href="{{ site.url }}/">Accueil</a></li>
-				<li><a href="{{ site.url }}/cours">Cours du web</a></li>
+				{% for category in site.categories  %}
+					<li><a href="{{ site.url }}/{{ category | first }}">{{ category | first }}</a></li>
+				{% endfor %}
 			</ul>
 		</nav>
 	</div>
