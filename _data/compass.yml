@@ -1,0 +1,15 @@
+---
+require:
+- jekyll-compass
+project_path: d:/wamp/www/02_Perso/cours-du-web/
+http_path: /
+css_dir: css
+sass_dir: css
+images_dir: img
+output_style: expanded
+import_paths:
+- _sass
+sass_options:
+  unix_newlines: true,
+  debug_info: true,
+  sourcemap: true 

@@ -1,0 +1,64 @@
+article.post-content{
+	color: $gris-c;
+
+	h3, h4, h5, h6{
+		color: $blanc;
+	}
+
+	a{
+		color: $vert;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	p{
+		&.image{
+			text-align: center;
+		}
+	}
+
+	ul{
+		list-style-type: none;
+		li{
+			&:before{
+				content: "- ";
+			}
+		}
+	}
+
+	div{
+		background: $gris-f;
+		padding: 20px;
+		margin: 10px 0;
+		h2, h3, h4, h5, h6{
+			margin-top: 0;
+		}
+		&.sommaire{
+			background: darken($bleu, 30%);
+			color: $blanc;
+			h2{
+				color: $blanc;
+			}
+			a{
+				color: $blanc;
+			}
+		}
+	}
+
+	pre{
+		background: $gris-m;
+		padding: 20px;
+		@include fonts($font2, $size-text);
+		color: $blanc;
+		@include box-shadow(inset 0 1px 10px rgba(0,0,0,0.3));
+	}
+	code{
+		background: $gris-m;
+		@include fonts($font2, $size-text);
+		color: $blanc;
+		padding: 3px;
+	}
+
+}
