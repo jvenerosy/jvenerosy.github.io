@@ -477,7 +477,6 @@ h2 {
 h2.page-heading {
   text-transform: uppercase;
   font: normal 28px "Open Sans", sans-serif;
-  border-bottom: 1px solid #777777;
   padding: 0 20px;
   color: #f1f1f1;
 }
@@ -583,18 +582,29 @@ strong {
 .cours section:hover {
   background: #1f1f1f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\0000381}}
+.cours section:hover img {
+  transform: scale(1.15);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\0000385}}
 .cours section a {
   color: inherit;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\0000389}}
 .cours section a.mea {
   display: table-cell;
   width: 300px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\0000392}}
+.cours section a.mea span {
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  display: block;
+}
 @media (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\0000389}}
   .cours section a.mea {
     display: block;
     width: 100%;
@@ -602,21 +612,22 @@ strong {
   }
 }
 @media (max-width: mobile) {
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\0000389}}
   .cours section a.mea {
     display: block;
     width: 100%;
     margin: 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003103}}
 .cours section a.mea img {
   height: 100%;
   margin-right: 20px;
   display: block;
+  transition: all 0.9s ease 0s;
 }
 @media (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003103}}
   .cours section a.mea img {
     display: block;
     width: 100%;
@@ -624,64 +635,65 @@ strong {
   }
 }
 @media (max-width: mobile) {
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003103}}
   .cours section a.mea img {
     display: block;
     width: 100%;
     margin: 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003115}}
 .cours section .txt {
   display: table-cell;
   vertical-align: top;
-  padding-right: 20px;
+  padding: 0 20px;
   text-align: left;
 }
 @media (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003115}}
   .cours section .txt {
     display: block;
   }
 }
 @media (max-width: mobile) {
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003115}}
   .cours section .txt {
     display: block;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003123}}
 .cours section .txt h2 {
   margin-top: 0;
+  padding-bottom: 0;
 }
 @media (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003123}}
   .cours section .txt h2 {
     margin: 0;
     line-height: 1em;
   }
 }
 @media (max-width: mobile) {
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003123}}
   .cours section .txt h2 {
     margin: 0;
     line-height: 1em;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003131}}
 .cours section .txt p {
-  font: normal 14px "Open Sans", sans-serif;
+  font: normal 20px "Open Sans", sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003133}}
 .cours section .txt p.author {
   color: #777777;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003137}}
 .cours section .txt p.tag a {
   color: #777777;
   margin: 0 10px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/d\:\/wamp\/www\/02_Perso\/cours-du-web\/_sass\/_base\.scss}line{font-family:\00003140}}
 .cours section .txt p.tag a:hover {
   text-decoration: underline;
 }

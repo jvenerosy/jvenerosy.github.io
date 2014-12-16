@@ -18,7 +18,7 @@ h2{
 	&.page-heading{
 		text-transform: uppercase;
 		@include fonts($font1, $size-title);
-		border-bottom: 1px solid $gris-c;
+		//border-bottom: 1px solid $gris-c;
 		padding: 0 $marge;
 		color: $blanc;
 	}
@@ -78,6 +78,9 @@ ul{
 		}
 		&:hover{
 			background: $gris-f;
+			img{
+				transform: scale(1.15);
+			}
 		}
 		a{
 			color: inherit;
@@ -86,6 +89,12 @@ ul{
 		a.mea{
 			display: table-cell;
 			width: 300px;
+			span{
+				overflow: hidden;
+				width: 300px;
+				height: 200px;
+				display: block;
+			}
 			@include breakpoint(mobile){
 				display: block;
 				width: 100%;
@@ -95,6 +104,7 @@ ul{
 				height: 100%;
 				margin-right: $marge;
 				display: block;
+				transition: all 0.9s ease 0s;
 				@include breakpoint(mobile){
 					display: block;
 					width: 100%;
@@ -105,20 +115,21 @@ ul{
 		.txt{
 			display: table-cell;
 			vertical-align: top;
-			padding-right: $marge;
+			padding: 0 $marge;
 			text-align: left;
 			@include breakpoint(mobile){
 				display: block;
 			}
 			h2{
 				margin-top: 0;
+				padding-bottom: 0;
 				@include breakpoint(mobile){
 					margin: 0;
 					line-height: 1em;
 				}
 			}
 			p{
-				@include fonts($font1, $size-text);
+				@include fonts($font1, 20px);
 				&.author{
 					color: $gris-c;
 				}
