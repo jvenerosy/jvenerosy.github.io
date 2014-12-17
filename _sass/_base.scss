@@ -1,3 +1,8 @@
+* { 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
 body{
 	background: $gris-m;
 	color: $blanc;
@@ -38,6 +43,30 @@ ul{
 	@include breakpoint(mobile){
 		padding: 0;
 	}
+	&.arianne{
+		list-style: none;
+		margin: 10px 0;
+		padding: 10px $marge;
+		background: $gris-f;
+		border-top: 1px solid $gris-m;
+		@include breakpoint(mobile){
+			display: none;
+		}
+		li{	
+			display: inline;
+			padding: 0;
+			@include fonts($font1, 14px);
+			text-transform: uppercase;
+			a{
+				text-decoration: none;
+				color: $gris-c;
+				&:hover{
+					text-decoration: underline;
+					color: $blanc;
+				}
+			}
+		}
+	}
 }
 
 .post-title{
@@ -54,6 +83,12 @@ ul{
 			float: none;
 		}
 	}
+	.post-author{
+		display: inline;
+		font-size: 0.5em;
+		text-transform: none;
+		margin-left: $marge;
+	}
 }
 
 .wrapper{
@@ -69,7 +104,7 @@ ul{
 	section{
 		display: table;
 		width: 100%;
-		padding: 10px;
+		padding: $marge;
 		border-bottom: 1px solid $gris-f;
 		@include breakpoint(mobile){
 			width: 90%;
@@ -115,7 +150,7 @@ ul{
 		.txt{
 			display: table-cell;
 			vertical-align: top;
-			padding: 0 $marge;
+			padding: 0  0 0 $marge;
 			text-align: left;
 			@include breakpoint(mobile){
 				display: block;

@@ -9,7 +9,7 @@ layout: default
 	<div class="cours">
 		{% for cours in site.categories.news %}
 		<section>
-			<a class="mea" href="{{ cours.url }}"><img src="{{cours.img}}" alt="{{cours.title}}"></a>
+			<a class="mea" href="{{ cours.url }}"><span><img src="{{cours.img}}" alt="{{cours.title}}"></span></a>
 			<div class="txt">
 				<h2 class="post-title"><a href="{{ cours.url }}">{{cours.title}}<span class="post-meta">{{cours.date | date: "%d / %m / %Y" }}</span></a></h2>
 				<p><a href="{{ cours.url }}">{{cours.description}}</a></p>
