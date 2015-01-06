@@ -27,6 +27,11 @@ layout: default
 		{% endif %}
 	</ul>
 
+	{% if page.mea %}
+	<p class="mea">
+		<img class="mea" src="{{ page.mea }}" alt="">
+	</p>
+	{% endif %}
 
 	<article class="post-content">
 		{{ content }}

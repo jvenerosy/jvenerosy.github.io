@@ -5,6 +5,7 @@ date:   2014-12-15 02:30:00
 author: jvenerosy
 description : Bienvenue sur ce nouvel espace qui servira de base pour uploader mes cours web
 img : /img/news/MEA-news1.png
+mea : /img/news/MEA-news1-wide.png
 ---
 {::options parse_block_html="true" /}
 <div>

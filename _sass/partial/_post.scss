@@ -65,7 +65,17 @@ article.post-content{
 	}
 }
 
-img.mea{
-	width: 100%;
-	height: auto;
+
+p.mea{
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+	img{
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 50%;
+		margin-left: -480px;
+	}
 }
