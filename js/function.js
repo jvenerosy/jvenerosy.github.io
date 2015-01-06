@@ -25,3 +25,9 @@ var sommaire = function(){
 		};
 	}
 };
+
+var showYear = function(element){
+	var date = new Date();
+
+	$(element).append(date.getFullYear());
+};

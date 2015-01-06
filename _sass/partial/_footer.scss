@@ -1,0 +1,7 @@
+footer.site-footer{
+	p{
+		text-align: center;
+		@include fonts($font1, $size-text);
+		color: $gris-c;
+	}
+}
