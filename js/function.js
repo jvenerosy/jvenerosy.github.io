@@ -18,7 +18,7 @@ var sommaire = function(){
 
 		$('article').prepend(som);
 		$('h2.title span').remove();
-		for (var i = 0; i < list.length - 1; i++) {
+		for (var i = 0; i < list.length; i++) {
 			var t = $('h2#'+list[i]).html();
 			var li = '<li><a href="#'+ list[i] +'">'+ t +'</a></li>';
 			$('.sommaire ul').append(li);
