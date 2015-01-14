@@ -1,0 +1,33 @@
+.post
+	transition: all 0.2s ease-in 0s
+	background: white
+	margin: $marge / 3
+	@include box-shadow(0 0 10px 0 rgba(0,0,0,0.2))
+	overflow: hidden
+
+	h1,h2,p,ul
+		margin: $marge / 2
+
+	h1.post-title
+		font-weight: normal
+		font-size: 24px
+		color: black
+		padding-bottom: $marge / 3
+		border-bottom: 1px solid $gris-c
+		span
+			display: block
+			font-size: 14px
+			font-weight: lighter
+			color: $gris
+
+	article
+		color: $gris
+		h2
+			color: $color-main
+		div
+			border-bottom: 1px solid $gris-c
+		p
+			&.image
+				margin: 20px 0
+		img
+			max-width: 100%

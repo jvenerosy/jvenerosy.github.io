@@ -1,0 +1,23 @@
+---
+layout: category
+---
+
+<div class="home">
+
+	<div class="category">
+		<h2 class="page-heading"><img src="{{ site.url }}/img/svg/outils.svg" alt="">Outils</h2>
+		<div class="outils">
+			{% for outils in site.categories.outils %}
+			<section>
+				<h2 class="post-title"><a href="{{ outils.url }}">{{outils.title}}<span class="post-meta">{{outils.date | date: "%d / %m / %Y" }}</span></a></h2>
+				<a class="mea" href="{{ outils.url }}"><span><img src="{{outils.img}}" alt="{{outils.title}}"></span></a>
+				<div class="txt">
+					<p><a href="{{ outils.url }}">{{outils.description}}</a></p>
+					<p class="author">Par <em>{{outils.author}}</em></p>
+				</div>
+			</section>
+			{% endfor %}
+		</div>
+	</div>
+
+</div>

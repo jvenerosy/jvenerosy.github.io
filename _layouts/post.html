@@ -1,40 +1,37 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html>
 
-	<header class="post-header">
-		<h1 class="post-title">{{ page.title }} <span class="post-author">{% if page.author %}Par <em>{{ page.author }}</em>{% endif %}</span><span class="post-meta">{{ page.date | date: "%d / %m / %Y" }}</h1>
-	</header>
+{% include head.html %}
 
-	{% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
-	{% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
-	{% assign previous="" %}
-	<ul class="arianne">
-		{% if num_parts == "0" or num_parts == "-1" %}
-		<li><a href="/">home</a> &nbsp; </li>
-		{% else %}
-		<li><a href="/">home</a> &#187; </li>
+<body>
 
-		{% for unused in page.content limit:num_parts %}
-		{% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
-		{% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
+	{% include header-post.html %}
+	
+	<div class="page-content">
+		<div class="wrapper">
+			<div class="post">
 
-		<li><a href="{{previous}}">{{ first_word }}</a> &#187; </li>
+				<header class="post-header">
+					<h1 class="post-title">{{ page.title }} <span class="post-author">{% if page.author %}Par <em>{{ page.author }}</em>{% endif %}</span><span class="post-meta">{{ page.date | date: "%d / %m / %Y" }}</h1>
+				</header>
 
-		{% capture url_parts %}{{ url_parts | remove_first:first_word }}{% endcapture %}
-		{% endfor %}
-		{% endif %}
-	</ul>
+				{% if page.mea %}
+				<p class="mea">
+					<img class="mea" src="{{ page.mea }}" alt="">
+				</p>
+				{% endif %}
 
-	{% if page.mea %}
-	<p class="mea">
-		<img class="mea" src="{{ page.mea }}" alt="">
-	</p>
-	{% endif %}
+				<article class="post-content">
+					{{ content }}
+				</article>
 
-	<article class="post-content">
-		{{ content }}
-	</article>
+			</div>
+		</div>
+	</div>
 
-</div>
+	{% include footer.html %}
+
+</body>
+
+</html>
+

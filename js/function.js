@@ -1,5 +1,5 @@
 var sommaire = function(){
-	var page = $('.post.cours').length;
+	var page = $('.post').length;
 	if(page){
 		var list = [];
 		$('h2').each(function(){
@@ -30,4 +30,10 @@ var showYear = function(element){
 	var date = new Date();
 
 	$(element).append(date.getFullYear());
+};
+
+var navClick = function(){
+	$('header.site-header').find('.md-menu').click(function(){
+		$('header.site-header nav, body, .overlay, .md-menu').toggleClass('active');
+	});
 };

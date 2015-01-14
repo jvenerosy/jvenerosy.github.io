@@ -4,20 +4,32 @@ layout: default
 
 <div class="home">
 
-
-	<div class="cours">
-		{% for category in site.categories  %}
-			<h2 class="page-heading">{{ category | first }}</h2>
-			{% for post in category[1] %}
+	
+	<div class="posts">
+		<div class="category">
+			<h2 class="page-heading">bienvenue sur mon site</h2>
 			<section>
-				<a class="mea" href="{{ post.url }}"><span><img src="{{post.img}}" alt="{{post.title}}"></span></a>
+				<h2>JVenerosy</h2>
+				<img src="{{ site.url }}/img/ganache.jpg" alt="" class="mea-prim">
 				<div class="txt">
-					<h2 class="post-title"><a href="{{ post.url }}">{{post.title}}<span class="post-meta">{{post.date | date: "%d / %m / %Y" }}</span></a></h2>
-					<p><a href="{{ post.url }}">{{post.description}}</a></p>
-					<p class="author">Par <em>{{post.author}}</em></p>
+					<p>Ayant beaucoup appris sur le web, me voici aujourd'hui ici afin de partager mes connaissances acquises durant ces presques 10 dernières années. Ce site sera un support pour mes cours mais pourra aussi, je l'espère, être utile au néophytes du web cherchant des leçons partant de zéro. Ici, pas de connaissances particulières requises, juste un peu de motivation et un esprit curieux vous seront demander afin d'être capable au bout de quelques semaines de produire un petit site internet.</p>
 				</div>
 			</section>
-			{% endfor %}
+		</div>
+		{% for category in site.categories  %}
+			<div class="category">
+				<h2 class="page-heading"><img src="{{ site.url }}/img/svg/{{ category | first }}.svg" alt="">{{ category | first }}</h2>
+				{% for post in category[1] %}
+				<section>
+					<h2 class="post-title"><a href="{{ post.url }}">{{post.title}}<span class="post-meta">{{post.date | date: "%d / %m / %Y" }}</span></a></h2>
+					<a class="mea" href="{{ post.url }}"><span><img src="{{post.img}}" alt="{{post.title}}"></span></a>
+					<div class="txt">
+						<p><a href="{{ post.url }}">{{post.description}}</a></p>
+						<p class="author">Par <em>{{post.author}}</em></p>
+					</div>
+				</section>
+				{% endfor %}
+			</div>
 		{% endfor %}
 	</div>
 
