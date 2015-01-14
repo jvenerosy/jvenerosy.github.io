@@ -1,98 +1,107 @@
 *
-	-webkit-box-sizing: border-box
-	-moz-box-sizing: border-box
-	box-sizing: border-box   
-
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
 
 body
-	font-size: $size-text
-	line-height: 1.61803398875em //nombre d'or
-	font-family: $font1
-	background: $gris-c
-	margin: 0	
-	&.active	
-		overflow: hidden
+    font-size: $size-text
+    line-height: 1.61803em
+    font-family: $font1
+    background: $gris-c
+    margin: 0
+    &.active
+        overflow: hidden
 
 h1, h2, h3, p
-	margin: 0
-
+    margin: 0
 
 h2.page-heading
-	font-size: 24px
-	margin: 15px 0 0 0	
-	color: white
-	font-weight: lighter
-	padding: $marge / 2
-	border-bottom: 1px solid $gris-c
-	background: $color-alt
-	img
-		width: 40px
-		height: 40px
-		vertical-align: -15px
-		margin: 0 20px 0 10px
+    font-size: 24px
+    margin: 15px 0 0 0
+    color: white
+    font-weight: lighter
+    padding: $marge / 2
+    border-bottom: 1px solid $gris-c
+    background: $color-alt
+    img
+        width: 40px
+        height: 40px
+        vertical-align: -15px
+        margin: 0 20px 0 10px
 
 a
-	color: $color-alt
-	text-decoration: none
+    color: $color-alt
+    text-decoration: none
 
 .page-content
-	margin-top: 57px
-	overflow: hidden
-	section
-		text-align: center
-		color: $gris
-		font-size: 18px
-		line-height: 1.61803398875em //nombre d'or
-		padding: $marge/2
-		border-bottom: 1px solid $gris-c
-		a
-			color: inherit
-			&.mea
-				img
-					background: $gris-c
-					width: 100%
-					padding: $marge / 2
-		img
-			max-width: 100%
-		h2
-			text-align: left
-			font-size: 20px
-			color: $color-main
-			margin-top: 0
-			span
-				display: block
-				font-size: 0.7em
-				color: $gris
-				font-weight: normal
+    margin-top: 57px
+    overflow: hidden
+    section
+        text-align: center
+        color: $gris
+        font-size: 18px
+        line-height: 1.61803em
+        padding: $marge / 2
+        border-bottom: 1px solid $gris-c
+        a
+            color: inherit
+            &.mea
+                img
+                    background: $gris-c
+                    width: 100%
+                    padding: $marge / 2
+        img
+            max-width: 100%
+        h2
+            text-align: left
+            font-size: 20px
+            color: $color-main
+            margin-top: 0
+            span
+                display: block
+                font-size: 0.7em
+                color: $gris
+                font-weight: normal
+        .txt
+            text-align: left
+            p
+                margin: $marge / 2 0
+                &.author
+                    margin-top: 20px
+                    color: black
+                    font-size: 14px
 
-		.txt
-			text-align: left
-			p
-				margin: $marge/2 0
-				&.author
-					margin-top: 20px
-					color: black
-					font-size: 14px
-	
 .category
-	transition: all 0.2s ease-in 0s
-	background: white
-	margin: $marge / 3
-	@include box-shadow(0 0 10px 0 rgba(0,0,0,0.2))
-	&:hover
-		@include box-shadow(0 0 10px 0 rgba(0,0,0,0.5))
+    transition: all 0.2s ease-in 0s
+    background: white
+    margin: $marge / 3
+    +box-shadow(0 0 10px 0 rgba(0, 0, 0, 0.2))
+    &:hover
+        +box-shadow(0 0 10px 0 rgba(0, 0, 0, 0.5))
 
 .overlay
-	position: fixed
-	top: 0
-	left: 0
-	width: 100%
-	height: 100%
-	background: rgba(0,0,0,0.8)
-	display: none
-	transition: opactity 0.8s ease-in 0s
-	opacity: 0
-	z-index: 10
-	&.active
-		display: block
-		opacity: 1
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.8)
+    display: none
+    transition: opactity 0.8s ease-in 0s
+    opacity: 0
+    z-index: 10
+    &.active
+        display: block
+        opacity: 1
+
+.videoWrapper
+    position: relative
+    padding-bottom: 56.25%
+    padding-top: 25px
+    height: 0
+    iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
