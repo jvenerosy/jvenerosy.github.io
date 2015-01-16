@@ -33,7 +33,7 @@ var showYear = function(element){
 };
 
 var navClick = function(){
-	$('header.site-header').find('.md-menu').click(function(){
-		$('header.site-header nav, body, .overlay, .md-menu').toggleClass('active');
+	$('header.site-header').find('.menu-nav').click(function(){
+		$('header.site-header nav, body, .overlay, .menu-nav').toggleClass('active');
 	});
 };

@@ -1,22 +1,25 @@
 ---
 layout: category
+weight: 2
 ---
 
 <div class="home">
 
-	<div class="category">
+	<div class="category cours">
 		<h2 class="page-heading"><img src="{{ site.url }}/img/svg/cours.svg" alt="">Cours</h2>
 		<div class="cours">
-			{% for cours in site.categories.cours %}
-			<section>
-				<h2 class="post-title"><a href="{{ cours.url }}">{{cours.title}}<span class="post-meta">{{cours.date | date: "%d / %m / %Y" }}</span></a></h2>
-				<a class="mea" href="{{ cours.url }}"><span><img src="{{cours.img}}" alt="{{cours.title}}"></span></a>
-				<div class="txt">
-					<p><a href="{{ cours.url }}">{{cours.description}}</a></p>
-					<p class="author">Par <em>{{cours.author}}</em></p>
-				</div>
-			</section>
-			{% endfor %}
+			<div class="container">
+				{% for cours in site.categories.cours %}
+				<section>
+					<h2 class="post-title"><a href="{{ cours.url }}">{{cours.title}}<span class="post-meta">{{cours.date | date: "%d / %m / %Y" }}</span></a></h2>
+					<a class="mea" href="{{ cours.url }}"><span><img src="{{cours.img}}" alt="{{cours.title}}"></span></a>
+					<div class="txt">
+						<p><a href="{{ cours.url }}">{{cours.description}}</a></p>
+						<p class="author">Par <em>{{cours.author}}</em></p>
+					</div>
+				</section>
+				{% endfor %}
+			</div>
 		</div>
 	</div>
 

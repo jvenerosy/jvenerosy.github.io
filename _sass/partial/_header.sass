@@ -10,7 +10,13 @@ header.site-header
 		background: none
 		margin: 0
 		width: 100%
-		.md-arrow-back
+		@include breakpoint(desktop)
+			width: $wrapper
+			margin: 0 auto
+			+box-shadow(none)
+			display: table
+			
+		.entypo-left-open
 			transition: all 0.4s ease-in 0s
 			position: absolute
 			top: 17px
@@ -19,6 +25,8 @@ header.site-header
 			font-size: 24px
 			cursor: pointer
 			color: white
+			@include breakpoint(desktop)
+				display: none
 		@include box-shadow(0 0 5px 0 $gris)
 		nav
 			z-index: 1000
@@ -30,6 +38,11 @@ header.site-header
 			width: 80%
 			background: $color-main
 			height: 100%
+			@include breakpoint(desktop)
+				position: static
+				transform: none
+				text-align: right
+				display: table-cell
 			&.active
 				left: 0
 				transform: translateX(25%)
@@ -38,7 +51,10 @@ header.site-header
 				position: relative
 				margin: 0
 				padding: 0
-				.md-menu
+				@include breakpoint(desktop)
+					position: static
+					font-size: 0
+				.menu-nav
 					transition: all 0.4s ease-in 0s
 					position: absolute
 					top: 17px
@@ -48,16 +64,23 @@ header.site-header
 					font-size: 24px
 					cursor: pointer
 					color: white
+					@include breakpoint(desktop)
+						display: none
+					
 					&.active
 						transform: rotateX(180deg)
 						&:before
-							content: "\f29a"
+							content: "\2715"
 				li
 					display: block
 					border-bottom: 1px solid lighten($color-main, 10%)
 					transition: all 0.4s ease 0s
 					text-transform: capitalize
 					font-size: 20px
+					@include breakpoint(desktop)
+						display: inline-block
+						border: none
+					
 					&:hover
 						background: lighten($color-main, 10%)
 					a
@@ -76,5 +99,9 @@ header.site-header
 		@include fonts($font1, $size-title, lighter)
 		text-align: center
 		padding: 10px
+		@include breakpoint(desktop)
+			text-align: left
+			display: table-cell
+			
 		a
 			color: white

@@ -23,6 +23,10 @@ h2.page-heading
     padding: $marge / 2
     border-bottom: 1px solid $gris-c
     background: $color-alt
+    +breakpoint(desktop)
+        background: none
+        color: $color-main
+
     img
         width: 40px
         height: 40px
@@ -36,6 +40,14 @@ a
 .page-content
     margin-top: 57px
     overflow: hidden
+    @include breakpoint(desktop)
+        margin-top: 80px
+    
+
+.container
+    +breakpoint(desktop)
+        overflow: hidden
+
     section
         text-align: center
         color: $gris
@@ -43,6 +55,15 @@ a
         line-height: 1.61803em
         padding: $marge / 2
         border-bottom: 1px solid $gris-c
+        +breakpoint(desktop)
+            width: 33.333%
+            float: left
+            transition: all 0.2s ease-in 0s
+            &:hover
+                background: $color-main
+                & *
+                    color: white
+
         a
             color: inherit
             &.mea
@@ -66,18 +87,39 @@ a
             text-align: left
             p
                 margin: $marge / 2 0
+                +breakpoint(desktop)
+                    height: 120px
+
                 &.author
                     margin-top: 20px
                     color: black
                     font-size: 14px
+                    +breakpoint(desktop)
+                        height: auto
 
 .category
     transition: all 0.2s ease-in 0s
     background: white
     margin: $marge / 3
     +box-shadow(0 0 10px 0 rgba(0, 0, 0, 0.2))
+    +breakpoint(desktop)
+        overflow: hidden
+        margin: 20px auto 
+
     &:hover
         +box-shadow(0 0 10px 0 rgba(0, 0, 0, 0.5))
+
+    a.see
+        text-align: right
+        display: block
+        margin: $marge / 3
+        font-size: 14px
+
+.wrapper   
+    @include breakpoint(desktop)
+        width: $wrapper
+        margin: auto
+
 
 .overlay
     position: fixed

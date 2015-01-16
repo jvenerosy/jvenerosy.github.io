@@ -1,22 +1,25 @@
 ---
 layout: category
+weight: 1
 ---
 
 <div class="home">
 
-	<div class="category">
+	<div class="category news">
 		<h2 class="page-heading"><img src="{{ site.url }}/img/svg/news.svg" alt="">News</h2>
 		<div class="news">
-			{% for news in site.categories.news %}
-			<section>
-				<h2 class="post-title"><a href="{{ news.url }}">{{news.title}}<span class="post-meta">{{news.date | date: "%d / %m / %Y" }}</span></a></h2>
-				<a class="mea" href="{{ news.url }}"><span><img src="{{news.img}}" alt="{{news.title}}"></span></a>
-				<div class="txt">
-					<p><a href="{{ news.url }}">{{news.description}}</a></p>
-					<p class="author">Par <em>{{news.author}}</em></p>
-				</div>
-			</section>
-			{% endfor %}
+			<div class="container">
+				{% for news in site.categories.news %}
+				<section>
+					<h2 class="post-title"><a href="{{ news.url }}">{{news.title}}<span class="post-meta">{{news.date | date: "%d / %m / %Y" }}</span></a></h2>
+					<a class="mea" href="{{ news.url }}"><span><img src="{{news.img}}" alt="{{news.title}}"></span></a>
+					<div class="txt">
+						<p><a href="{{ news.url }}">{{news.description}}</a></p>
+						<p class="author">Par <em>{{news.author}}</em></p>
+					</div>
+				</section>
+				{% endfor %}
+			</div>
 		</div>
 	</div>
 
