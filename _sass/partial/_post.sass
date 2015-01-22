@@ -8,15 +8,29 @@
         margin: $marge / 2
     h1.post-title
         font-weight: normal
-        font-size: 24px
-        color: black
-        padding-bottom: $marge / 3
+        font-size: 34px
+        margin: 0
+        color: white
+        padding: $marge
         border-bottom: 1px solid $gris-c
+        background: $color-alt
         span
             display: block
             font-size: 14px
             font-weight: lighter
-            color: $gris
+            color: white
+            float: right
+            margin: 0 10px
+
+    p.mea
+        height: 300px
+        overflow: hidden
+        img
+            height: 100%
+            width: auto
+            @include breakpoint(desktop)
+                width: 100%
+                height: auto
     article
         color: $gris
         h2

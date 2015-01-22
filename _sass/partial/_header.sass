@@ -1,5 +1,6 @@
 header.site-header
 	background: $color-main
+	z-index: 1000
 	color: white
 	position: fixed
 	top: 0
@@ -81,7 +82,7 @@ header.site-header
 						display: inline-block
 						border: none
 					
-					&:hover
+					&:hover, &.hover
 						background: lighten($color-main, 10%)
 					a
 						margin: 0 10px
