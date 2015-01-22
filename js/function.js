@@ -37,3 +37,12 @@ var navClick = function(){
 		$('header.site-header nav, body, .overlay, .menu-nav').toggleClass('active');
 	});
 };
+
+var imgTransform = function(){
+	var src;
+	$('p.image img, img.mea').each(function(){
+		src = $(this).attr('src');
+		$(this).removeAttr('src').attr('data-original', src);
+	});
+
+};
