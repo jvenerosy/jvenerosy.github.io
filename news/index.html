@@ -16,7 +16,12 @@ weight: 1
 					<div class="txt">
 						<p><a href="{{ news.url }}">{{news.description}}</a></p>
 						<p class="author">Par <em>{{news.author}}</em></p>
-						<p><a href="{{ post.url }}#disqus_thread">Commentaires</a></p>
+						<p class="tag">
+						{% for tag in news.tags  %}
+							<a href="{{ tag }}">#{{ tag }}</a>
+						{% endfor %}
+						</p>
+						<p class="comment"><a href="{{ post.url }}#disqus_thread">Commentaires</a></p>
 					</div>
 				</section>
 				{% endfor %}

@@ -64,6 +64,10 @@ a
                 background: $color-main
                 & *
                     color: white
+                .txt
+                    p.tag
+                        a
+                            color: white
 
         a
             color: inherit
@@ -97,6 +101,18 @@ a
                     font-size: 14px
                     +breakpoint(desktop)
                         height: auto
+                &.tag, &.comment  
+                    margin: 0
+                    height: auto
+                &.tag
+                    a
+                        font-size: 12px
+                        color: $color-main
+                        display: inline-block
+                        padding: 0 5px
+                        &:hover
+                            background: white
+                            color: $color-main
 
 .category
     transition: all 0.2s ease-in 0s

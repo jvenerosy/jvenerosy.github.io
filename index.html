@@ -16,7 +16,12 @@ layout: default
 						<div class="txt">
 							<p><a href="{{ post.url }}">{{post.description}}</a></p>
 							<p class="author">Par <em>{{post.author}}</em></p>
-							<p><a href="{{ post.url }}#disqus_thread">Commentaires</a></p>
+							<p class="tag">
+							{% for tag in post.tags  %}
+								<a href="{{ tag }}">#{{ tag }}</a>
+							{% endfor %}
+							</p>
+							<p class="comment"><a href="{{ post.url }}#disqus_thread">Commentaires</a></p>
 						</div>
 					</section>
 					{% endfor %}
@@ -33,7 +38,12 @@ layout: default
 						<div class="txt">
 							<p><a href="{{ post.url }}">{{post.description}}</a></p>
 							<p class="author">Par <em>{{post.author}}</em></p>
-							<p><a href="{{ post.url }}#disqus_thread">Commentaires</a></p>
+							<p class="tag">
+							{% for tag in post.tags  %}
+								<a href="{{ tag }}">#{{ tag }}</a>
+							{% endfor %}
+							</p>
+							<p class="comment"><a href="{{ post.url }}#disqus_thread">Commentaires</a></p>
 						</div>
 					</section>
 					{% endfor %}
@@ -50,7 +60,12 @@ layout: default
 						<div class="txt">
 							<p><a href="{{ post.url }}">{{post.description}}</a></p>
 							<p class="author">Par <em>{{post.author}}</em></p>
-							<p><a href="{{ post.url }}#disqus_thread">Commentaires</a></p>
+							<p class="tag">
+							{% for tag in post.tags  %}
+								<a href="{{ tag }}">#{{ tag }}</a>
+							{% endfor %}
+							</p>
+							<p class="comment"><a href="{{ post.url }}#disqus_thread">Commentaires</a></p>
 						</div>
 					</section>
 					{% endfor %}

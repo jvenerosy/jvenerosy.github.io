@@ -12,4 +12,4 @@ permalink: /:categories/:title/
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments

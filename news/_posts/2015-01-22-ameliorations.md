@@ -7,6 +7,7 @@ description : Version 2 du site niveau design et fonctionnalités
 img : /img/news/MEA-news2.png
 mea : /img/news/MEA-news2-wide.jpg
 category : news
+tags : site maj
 ---
 {::options parse_block_html="true" /}
 <div>

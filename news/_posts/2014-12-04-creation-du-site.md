@@ -7,6 +7,7 @@ description : Bienvenue sur ce nouvel espace qui servira de base pour uploader m
 img : /img/news/MEA-news1.png
 mea : /img/news/MEA-news1-wide.jpg
 category : news
+tags : site maj
 ---
 {::options parse_block_html="true" /}
 <div>
